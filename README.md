@@ -14,5 +14,8 @@ use the Runes font by Teup for displaying the Runes.
 - save to pdf (?)
 - social media sharing (?)
 
-
+# modes
+- cli - usable from the commandline
+- chakra - divines a rune for each chakra
+- ppf - past present future
 
