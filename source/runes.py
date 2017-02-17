@@ -71,10 +71,12 @@ class Ui_Runes(object):
 
     def genrune(self):
         #randomly select ascii letter to represent rune
-
-
-        self.rune_result.setText("x") #Display the rune
+        items = ("1","2","3","4","5","6")
+        rand_item = random.choice(items)
+        self.rune_result.setText(rand_item) #Display the rune
          #this will be a randomly generated result, but using letter as placeholder
+        
+
 
 
 
