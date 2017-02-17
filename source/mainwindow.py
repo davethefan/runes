@@ -65,6 +65,10 @@ class Ui_MainWindow(object):
         self.rune_result.setAccessibleName(_translate("MainWindow", "runefont"))
         self.rune_result.setAccessibleDescription(_translate("MainWindow", "TTF File \'Runes\'"))
         self.rune_result.setText(_translate("MainWindow", "1"))
+        self.btnReady.clicked.connect(self.genrune)
+
+    def genrune(self):
+        self.rune_result.setText("t")
 
 
 if __name__ == "__main__":
