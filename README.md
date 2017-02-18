@@ -9,7 +9,7 @@ use the Runes font by Teup for displaying the Runes.
 # planned features
 - divination by single and celtic cross methods
 - encyclopedia of meanings
-- capitalised font draws an inverted rune
+x capitalised font draws an inverted rune
 - categorised, drop down menus for easy intent selection
 - save to pdf (?)
 - social media sharing (?)
