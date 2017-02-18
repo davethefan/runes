@@ -13,7 +13,7 @@ import string
 class Ui_Runes(object):
     def setupUi(self, MainRunes):
         MainRunes.setObjectName("MainRunes")
-        MainRunes.resize(442, 356)
+        MainRunes.resize(442, 374)
         self.centralWidget = QtWidgets.QWidget(MainRunes)
         self.centralWidget.setObjectName("centralWidget")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.centralWidget)
@@ -42,7 +42,11 @@ class Ui_Runes(object):
         self.rune_result.setWordWrap(True)
         self.rune_result.setIndent(1)
         self.rune_result.setObjectName("rune_result")
+        self.lbl_info = QtWidgets.QLabel(self.centralWidget)
+        self.lbl_info.setAlignment(QtCore.Qt.AlignCenter)
+        self.lbl_info.setObjectName("lbl_info")
         self.verticalLayout.addWidget(self.rune_result)
+        self.verticalLayout.addWidget(self.lbl_info)
         MainRunes.setCentralWidget(self.centralWidget)
         self.menuBar = QtWidgets.QMenuBar(MainRunes)
         self.menuBar.setGeometry(QtCore.QRect(0, 0, 442, 22))
@@ -61,17 +65,19 @@ class Ui_Runes(object):
     def retranslateUi(self, MainRunes):
         _translate = QtCore.QCoreApplication.translate
         MainRunes.setWindowTitle(_translate("MainRunes", "Runes (v0.01)"))
-        self.lbl_instructions.setText(_translate("MainRunes", "Keep the image of what you would like to divine for clear in your mind\'s eye: hold it for as long as you like."))
+        self.lbl_instructions.setText(_translate("MainRunes", "Close your eyes, and ask your question into your mind's eye. "))
         self.btnReady.setText(_translate("MainRunes", "Ready"))
         self.rune_result.setToolTip(_translate("MainRunes", "Your divined Rune"))
         self.rune_result.setAccessibleName(_translate("MainRunes", "runefont"))
         self.rune_result.setAccessibleDescription(_translate("MainRunes", "TTF File \'Runes\'"))
         self.rune_result.setText(_translate("MainRunes", "-"))
         self.btnReady.clicked.connect(self.genrune)
+        self.lbl_info.setText(_translate("MainWindow", "[name]"))
+
 
     def genrune(self):
         #randomly select ascii letter to represent rune
-        items = (abcdefghijklmnopqrstuvwxyz)
+        items = (string.ascii_lowercase + string.ascii_uppercase)
         rand_item = random.choice(items)
         self.rune_result.setText(rand_item) #Display the rune
          #this will be a randomly generated result, but using letter as placeholder
