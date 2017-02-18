@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>442</width>
-    <height>356</height>
+    <height>374</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,19 +16,19 @@
   <widget class="QWidget" name="centralWidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
+     <widget class="QPushButton" name="btnReady">
+      <property name="text">
+       <string>Ready</string>
+      </property>
+     </widget>
+    </item>
+    <item>
      <widget class="QLabel" name="lbl_instructions">
       <property name="text">
        <string>Keep the image of what you would like to divine for clear in your mind's eye: hold it for as long as you like.</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="btnReady">
-      <property name="text">
-       <string>Ready</string>
       </property>
      </widget>
     </item>
@@ -74,6 +74,16 @@
       </property>
       <property name="indent">
        <number>1</number>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lbl_info">
+      <property name="text">
+       <string>[name]</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
     </item>

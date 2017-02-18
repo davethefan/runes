@@ -7,6 +7,8 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+import random
+import string
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -64,11 +66,31 @@ class Ui_MainWindow(object):
         self.rune_result.setToolTip(_translate("MainWindow", "Your divined Rune"))
         self.rune_result.setAccessibleName(_translate("MainWindow", "runefont"))
         self.rune_result.setAccessibleDescription(_translate("MainWindow", "TTF File \'Runes\'"))
-        self.rune_result.setText(_translate("MainWindow", "1"))
+        self.rune_result.setText(_translate("MainWindow", "-"))
         self.btnReady.clicked.connect(self.genrune)
 
     def genrune(self):
-        self.rune_result.setText("t")
+        MainWindow.setWindowTitle=("Runes (v0.01): Generating...")
+        pause (10)
+
+
+        #randomly select ascii letter to represent rune
+
+
+        self.rune_result.setText("x") #Display the rune
+         #this will be a randomly generated result, but using letter as placeholder
+
+
+
+''' change button to 'Clear' the result if one has already been produced, Ready for another divination '''
+''' this is currently broken
+
+        if self.rune_result.text == ("-"):
+                self.btnReady.setText("Ready")
+        else:
+                self.btnReady.setText("Clear")
+         
+'''
 
 
 if __name__ == "__main__":
