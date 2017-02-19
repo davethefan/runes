@@ -1,0 +1,13 @@
+v0.0.1 [current]
+- Rudimentary UI design
+- Randomly divines single character from runic alphabet, and displays it.
+  (Ascii ->  Runes symbol font)
+
+
+v0.0.2 [proposed]
+- Basic tooltip support for MouseOver name label
+- About box
+
+v0.0.3 [planned]
+- Tooltip on label name will be clickable to Encyclopedia
+
