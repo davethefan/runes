@@ -78,14 +78,16 @@ class Ui_Runes(object):
     def genrune(self):
         #randomly select ascii letter to represent rune
         #items = (string.ascii_lowercase + string.ascii_uppercase)
-        items=("a","b","B","c","d","e","f","F","g","i","j","k","l","L","m","M"
-            ,"n","o","O","p","P","r","R","s","t","T","u","U","w","x","y","z","Z")
+        items = ("a")
+        #items=("a","b","B","c","d","e","f","F","g","i","j","k","l","L","m","M"
+        #    ,"n","o","O","p","P","r","R","s","t","T","u","U","w","x","y","z","Z")
         rand_item = random.choice(items)
         self.rune_result.setText(rand_item) #Display the rune
         
     
         if rand_item == "a":
             self.lbl_info.setText("Ansuz")
+            self.lbl_info.setToolTip("Meaning:\nPronounciation:")
         if rand_item == "b":
             self.lbl_info.setText("Berkana")
         if rand_item == "c":
