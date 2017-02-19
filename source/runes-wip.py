@@ -64,7 +64,7 @@ class Ui_Runes(object):
 
     def retranslateUi(self, MainRunes):
         _translate = QtCore.QCoreApplication.translate
-        MainRunes.setWindowTitle(_translate("MainRunes", "Runes (v0.01)"))
+        MainRunes.setWindowTitle(_translate("MainRunes", "Runes (v0.0.2)"))
         self.lbl_instructions.setText(_translate("MainRunes", "Close your eyes, and ask your question into your mind's eye. "))
         self.btnReady.setText(_translate("MainRunes", "Ready"))
         self.rune_result.setToolTip(_translate("MainRunes", "Your divined Rune"))
