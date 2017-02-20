@@ -64,7 +64,7 @@ class Ui_Runes(object):
 
     def retranslateUi(self, MainRunes):
         _translate = QtCore.QCoreApplication.translate
-        MainRunes.setWindowTitle(_translate("MainRunes", "Runes (v0.0.1)"))
+        MainRunes.setWindowTitle(_translate("MainRunes", "Runes (v0.0.2)"))
         self.lbl_instructions.setText(_translate("MainRunes", "Close your eyes, and ask your question into your mind's eye. "))
         self.btnReady.setText(_translate("MainRunes", "Ready"))
         self.rune_result.setToolTip(_translate("MainRunes", "Your divined Rune"))
@@ -79,86 +79,122 @@ class Ui_Runes(object):
         #randomly select ascii letter to represent rune
         #items = (string.ascii_lowercase + string.ascii_uppercase)
         items=("a","b","B","c","d","e","f","F","g","i","j","k","l","L","m","M"
-            ,"n","o","O","p","P","r","R","s","t","T","u","U","w","x","y","z","Z")
+        ,"n","o","O","p","P","r","R","s","t","T","u","U","w","x","y","z","Z")
         rand_item = random.choice(items)
         self.rune_result.setText(rand_item) #Display the rune
         
     
         if rand_item == "a":
             self.lbl_info.setText("Ansuz")
+            self.lbl_info.setToolTip("One of the Æsir gods.")
         if rand_item == "b":
             self.lbl_info.setText("Berkana")
+            self.lbl_info.setToolTip("Birch.")
         if rand_item == "c":
             self.lbl_info.setText("Kano")
+            self.lbl_info.setToolTip("Torch")
         if rand_item == "B":
             self.lbl_info.setText("Kano (Inverted)")
+            self.lbl_info.setToolTip("Torch.")
         if rand_item == "d":
             self.lbl_info.setText("Dagaz")
+            self.lbl_info.setToolTip("Day.")
         if rand_item == "e":
             self.lbl_info.setText("Eihwaz")
+            self.lbl_info.setToolTip("Horse.")
         if rand_item == "E":
             self.lbl_info.setText("Eihwaz (Inverted)")
+            self.lbl_info.setToolTip("Horse.")
         if rand_item == "f":
             self.lbl_info.setText("Fehu")
+            self.lbl_info.setToolTip("Wealth, cattle.")
         if rand_item == "F":
             self.lbl_info.setText("Fehu (Inverted)")
+            self.lbl_info.setToolTip("Wealth, cattle.")
 
         if rand_item == "g":
             self.lbl_info.setText("Gebo")
+            self.lbl_info.setToolTip("Gift.")
         if rand_item == "h":
             self.lbl_info.setText("Hagaz")
+            self.lbl_info.setToolTip("Hail (precipitation).")
         if rand_item == "H":
             self.lbl_info.setText("Hagaz (Inverted)")
+            self.lbl_info.setToolTip("Hail (precipitation).")
         
         if rand_item == "i":
             self.lbl_info.setText("Isa")
+            self.lbl_info.setToolTip("Ice.")
         if rand_item == "j":
             self.lbl_info.setText("Jera")
+            self.lbl_info.setToolTip("Year, good year, good harvest.")
         if rand_item == "k":
             self.lbl_info.setText("Kaunan")
+            self.lbl_info.setToolTip("Ulcer")
         if rand_item == "l":
             self.lbl_info.setText("Laguz")
+            self.lbl_info.setToolTip("Water, lake")
         if rand_item == "L":
             self.lbl_info.setText("Laguz (Inverted)")
+            self.lbl_info.setToolTip("Water, lake")
         if rand_item == "m":
             self.lbl_info.setText("Manaz")
+            self.lbl_info.setToolTip("Man.")
         if rand_item == "M":
             self.lbl_info.setText("Manaz (Inverted)")
+            self.lbl_info.setToolTip("Man.")
 
         if rand_item == "n":
             self.lbl_info.setText("Nauthiz")
+            self.lbl_info.setToolTip("Need.")
         if rand_item == "o":
             self.lbl_info.setText("Othila")
+            self.lbl_info.setToolTip("Heritage, estate, possession.")
         if rand_item == "O":
             self.lbl_info.setText("Othila (Inverted)")
+            self.lbl_info.setToolTip("Heratige, estate, possession.")
         if rand_item == "p":
             self.lbl_info.setText("Perth")
+            self.lbl_info.setToolTip("Meaning unclear: perhaps 'pear tree'")
         if rand_item == "P":
             self.lbl_info.setText("Perth (Inverted)")
+            self.lbl_info.setToolTip("Meaning unclear: perhaps 'pear tree'")
         if rand_item == "r":
             self.lbl_info.setText("Raido")
+            self.lbl_info.setToolTip("Ride, journey.")
         if rand_item == "R":
             self.lbl_info.setText("Raido (Inverted)")
+            self.lbl_info.setToolTip("Ride, journey.")
         if rand_item == "s":
             self.lbl_info.setText("Sowelu")
+            self.lbl_info.setToolTip("Sun")
         if rand_item == "t":
             self.lbl_info.setText("Teiwaz")
+            self.lbl_info.setToolTip("The god, Teiwaz")
         if rand_item == "T":
             self.lbl_info.setText("Teiwaz (Inverted)")
+            self.lbl_info.setToolTip("The god, Teiwaz.")
         if rand_item == "u":
             self.lbl_info.setText("Uruz")
+            self.lbl_info.setToolTip("Water, slag.")
         if rand_item == "U":
             self.lbl_info.setText("Uruz (Inverted)")
+            self.lbl_info.setToolTip("Water, slag.")
         #if rand_item == "v":
         #    self.lbl_info.setText("Teiwaz (Inverted)")
+        # self.lbl_info.setToolTip("One of the Æsir gods.")
         if rand_item == "w":
             self.lbl_info.setText("Wunjo")
+            self.lbl_info.setToolTip("Joy.")
         if rand_item == "y":
             self.lbl_info.setText("Jera")
+            self.lbl_info.setToolTip("Year, good year, harvest..")
         if rand_item == "z":
             self.lbl_info.setText("Algiz")
+            self.lbl_info.setToolTip("Meaning unclear: possibly 'elk'.")
         if rand_item == "Z":
             self.lbl_info.setText("Algiz (Inverted)")
+            self.lbl_info.setToolTip("Meaning unclear: possibly 'elk'.")
         
 
 ''' change button to 'Clear' the result if one has already been produced, Ready for another divination '''
